@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{nothing}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello?</h1>
+        <p>I dont know why you searching {{nothing}} in here</p>
+        <p>I dont know why you here but i will recommend</p>
+        <p>you to go to the <a href="/">home</a> page.</p>
+    </div>
+    <div class="container">
+        <h1>If you do want to stay</h1>
+        <p>That alr he can chill and talk about {{nothing}}</p>
+        <form action="">
+            <input type="text" class="styled-input" placeholder="Tell me about {{nothing}}"><br>
+            <button class="styled-button" type="reset" onclick="buttonPressed()">Send</button>
+            <p id="result"></p>
+        </form>
+        <script>
+            function buttonPressed() {
+              document.getElementById("result").innerHTML = "Thank you. your thought on {{nothing}} will never arrive to me next time save it to your self. sorry :(";
+            }
+        </script>
+    </div>
+</body>
+</html>

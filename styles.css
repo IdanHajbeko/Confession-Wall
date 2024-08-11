@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #19191a;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    border-bottom: 2px solid #0056b3;
+    border-radius: 5px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #495057;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.confession_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1E385C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.confession_h1 {
+    color: #8b8989;
+    text-align: center;
+    padding: 10px;
+    background-color: #82353D;
+    border-bottom: 2px solid #5e272c;
+    border-radius: 5px;
+}
+
+.confession_p {
+    text-align: left;
+    font-size: 1.2em;
+    color: #495057;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.styled-input {
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    width: 300px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.styled-input:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.styled-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+
+.styled-button:hover {
+    background-color: #2980b9;
+}
+
+.styled-button:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Wall</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Confession Wall!</h1>
+        <p>Here you can post or view confessions anonymously!</p>
+        <p>Learn more about the <a href="AboutMe">creator</a> of this site.</p>
+        <p><a href="PostYourConfession">Post your Confession </a> on the wall.</p>
+    </div>
+
+    {% for item in data[::-1] %}
+        <div class="confession_container">
+            <h1 class="confession_h1">{{ item[1] }}</h1>
+            <p>{{ item[2] }}</p>
+            <p></p>
+            <p>Date: {{ item.date }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
