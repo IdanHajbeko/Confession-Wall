@@ -14,17 +14,15 @@
         <p><a href="PostYourConfession">Post Your Confession </a> on the wall.</p>
     </div>
 
-    {% for item in data[::-1] %}
-    <a href="confession/{{ item[0] }}" class="confession_a">
-        <div class="confession_container confession_container_hover">
-            <h1 class="confession_h1">{{ item[1] | truncate(20, True)}}</h1>
-            <p>
-                {{ item[2] | truncate(90, True) }}
-            </p>
-            <p style="text-align: left;">Time of confession: {{ item[4] }}</p>
+        <div class="confession_container">
+            <h1 class="confession_h1">{{ confession[1] }}</h1>
+            <p>{{ confession[2] }}</p>
+            <p style="text-align: left;">Time of confession: {{ confession[4] }}</p>
         </div>
-    </a>
-    {% endfor %}
-    
+
+        <a href="../delete/{{ confession[0] }}" class="confession_a">
+        <div class="confession_container">
+            <h1 class="confession_h1">delete this confession</h1>
+        </div>
 </body>
 </html>
