@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confession Wall</title>
+    <title>{{ confession[2] }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Confession Wall!</h1>
-        <p>Here you can post or view confessions anonymously!</p>
-        <p>Learn more about the <a href="AboutMe">creator</a> of this site.</p>
-        <p><a href="PostYourConfession">Post Your Confession </a> on the wall.</p>
+        <p>Here is the full confession</p>
+        <p><a href="../PostYourConfession">Post Your own Confession </a> on the wall</p>
+        <p>Go back to the <a href="../">Home</a> page</p>
+        <p><a href="../delete/{{ confession[0] }}" style="color: red;">Delete </a> This confession</p>
     </div>
 
         <div class="confession_container">
@@ -21,7 +21,7 @@
         </div>
 
         <a href="../delete/{{ confession[0] }}" class="confession_a">
-        <div class="confession_container">
+        <div class="confession_container confession_container_hover">
             <h1 class="confession_h1">delete this confession</h1>
         </div>
 </body>

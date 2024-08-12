@@ -1,17 +1,28 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <title>post a confession</title> 
-    </head> 
-    <body> 
-        <form method="POST"> 
-            <label>Enter Title of the confession:</label> 
-            <input type="text" name="title" placeholder="Enter Title of the confession" required><br/> 
-            <label>Write your confession:</label> 
-            <input type="text" name="confession" placeholder="Write your confession" required><br/>
-            <label>Enter a password if you will want to delete the confession:</label> 
-            <input type="password" name="password" placeholder="Enter password for case of regrates" required><br/> 
-            <input type = "submit" value = "submit"/><br/> 
-        </form> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confess a new confession</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+    <body>
+        <div class="container">
+            <h1>Confess a new confession!</h1>
+            <p>Here you can Confess a new confession anonymously!</p>
+            <p>You can always delete it, just remember the password</p>
+            <p>Go back to the <a href="../">Home</a> page</p>
+        </div>
+        <div class="container">
+            <form method="POST"> 
+                <label>Enter Title of the confession:</label> 
+                <input type="text" name="title" placeholder="Enter Title of the confession" required><br/> 
+                <label>Write your confession:</label> 
+                <input type="text" name="confession" placeholder="Write your confession" required><br/>
+                <label>Enter a password if you will want to delete the confession:</label> 
+                <input type="password" name="password" placeholder="Enter password for case of regrates" required minlength="5"><br/>
+                <button type="submit" value = "submit">Send</button>
+            </form> 
+        </div>
     </body> 
 </html>

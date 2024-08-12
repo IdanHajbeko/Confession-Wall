@@ -1,13 +1,23 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <title>deletet a confession</title> 
-    </head> 
-    <body> 
-        <form method="POST"> 
-            <label>To delete this confession:</label>
-            <input type="password" name="password" placeholder="Enter password for confession" required><br/> 
-            <input type = "submit" value = "submit"/><br/>
-        </form> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete confession</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+    <div class="container">
+        <h1>Delete your confession!</h1>
+        <p>Here you Delete your confession!</p>
+        <p>Go back to the <a href="../">Home</a> page</p>
+    </div>
+    <body>
+        <div class="container">
+            <form method="POST"> 
+                <label>To delete this confession:</label>
+                <input type="password" name="password" placeholder="Enter password for confession" required><br/> 
+                <button type = "submit" value = "submit" style="background-color: #9e2a34;">Delete</button><br/>
+            </form>
+        </div> 
     </body> 
 </html>
