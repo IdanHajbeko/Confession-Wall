@@ -41,6 +41,11 @@ p {
     margin-top: 50px;
     overflow: hidden;
     word-wrap: break-word;
+    transition: transform 0.3s ease-in-out;
+}
+
+.confession_container_hover:hover {
+    transform: scale(1.05); 
 }
 
 .confession_h1 {
@@ -58,10 +63,22 @@ p {
     color: #495057;
 }
 
+.confession_a {
+    text-decoration: none;
+    color: inherit; 
+    cursor: default;
+}
+
+.confession_a:hover{
+    text-decoration: none;
+}
+
+
 a {
     color: #007bff;
     text-decoration: none;
 }
+
 
 a:hover {
     text-decoration: underline;
