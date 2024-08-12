@@ -85,7 +85,7 @@ a:hover {
 }
 
 
-.styled-input {
+input  {
     padding: 10px;
     border: 2px solid #3498db;
     border-radius: 5px;
@@ -93,15 +93,16 @@ a:hover {
     font-size: 16px;
     width: 300px;
     transition: border-color 0.3s, box-shadow 0.3s;
+    margin: 5px;
 }
 
-.styled-input:focus {
+input:focus {
     border-color: #2980b9;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 
-.styled-button {
+button {
     background-color: #3498db;
     color: white;
     border: none;
@@ -113,10 +114,10 @@ a:hover {
     
 }
 
-.styled-button:hover {
+button:hover {
     background-color: #2980b9;
 }
 
-.styled-button:active {
+button:active {
     transform: scale(0.98);
 }
