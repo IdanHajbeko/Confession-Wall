@@ -121,3 +121,18 @@ button:hover {
 button:active {
     transform: scale(0.98);
 }
+
+#corner_image {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 90px; 
+    height: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+#corner_image:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
