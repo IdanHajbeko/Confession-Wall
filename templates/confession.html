@@ -20,9 +20,11 @@
             <p style="text-align: left;">Time of confession: {{ confession[4] }}</p>
         </div>
 
-        <a href="../delete/{{ confession[0] }}" class="confession_a">
         <div class="confession_container confession_container_hover">
+            <a href="../delete/{{ confession[0] }}" class="confession_a">
             <h1 class="confession_h1">delete this confession</h1>
+            </a>
         </div>
+        <a href="../delete/{{ confession[0] }}"><img src="{{ url_for('static', filename='trash_can.png') }}" id="corner_image" alt="Delete a Confession" ></a>
 </body>
 </html>
