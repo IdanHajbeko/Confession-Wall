@@ -108,7 +108,7 @@ def delete_confession(id=None):
                 confessions.commit()
                 return redirect("/", code=302)
             else:
-                return "Password incorrect", 403
+                return render_template("delete_confession.html", error_code="Password incorrect try again")
         except sqlite3.Error as e:
             print(f"\033[91mAn error occurred:\033[00m {e} ")
             init_db()
@@ -116,7 +116,7 @@ def delete_confession(id=None):
             if confessions:
                 confessions.close()
     else:
-        return render_template("delete_confession.html")
+        return render_template("delete_confession.html", error_code="")
 
 
 @app.route('/confession', methods=['GET'])
@@ -148,4 +148,4 @@ def Handling_nothing(nothing):
 
 if __name__ == '__main__':
     init_db()
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0", port=80)
