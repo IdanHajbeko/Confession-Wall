@@ -72,4 +72,4 @@ Contact me through:
 1. email: idancode.hajbeko@gmail.com
 2. discord: 1idan1
 3. or just create a pull request here
-I will be happy for any help
+<br>I will be happy for any help
