@@ -55,5 +55,21 @@ If you want to run the confession wall on your machine that is very easy:
 3. Now just run the Python program
 <br>***Note:*** You might want to reset/delete the database.db because it will have all of the data from when I used it
 ## What I would add
-
-## How to contact me
+When I continue working on this project I will add:
+1. Way to search confessions
+2. Way to filter confessions posts that aren't confessions because right now one can write anything.
+3. Brute force protection 
+4. DDoS protection
+5. Confessions categories
+6. Changing the style
+## How to contribute to this project
+If you want to contribute to this project by helping:
+1. designing
+2. writing and bettering the frontend
+3. writing and bettering the back end
+4. or anything
+Contact me through:
+1. email: idancode.hajbeko@gmail.com
+2. discord: 1idan1
+3. or just create a pull request here
+I will be happy for any help
