@@ -40,11 +40,20 @@ Yes, I could choose the easy option and use a hosting service but for learning p
 <br> My static domain I got from Ngrok was:
 <br>https://unified-first-rooster.ngrok-free.app/
 <br><br>I thought it was cool that the subdomain I got was maybe the first(If someone knows please tell me).
-
-<br><br>I will host the website on a hosting service maybe with a domain for some time.
+<br>I will host the website on a hosting service maybe with a domain for some time.
 
 ## How to install
-
-## What i would add
+If you want to run the confession wall on your machine that is very easy:
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/IdanHajbeko/Confession-Wall.git
+   ```
+2. install the requirements:
+   ```sh
+      pip install -r requirements.txt
+   ```
+3. Now just run the Python program
+<br>***Note:*** You might want to reset/delete the database.db because it will have all of the data from when I used it
+## What I would add
 
 ## How to contact me
