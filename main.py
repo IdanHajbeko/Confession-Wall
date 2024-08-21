@@ -59,11 +59,6 @@ def home():
     return render_template('index.html', data=data)
 
 
-@app.route('/AboutMe', methods=['GET'])
-def About_Me():
-    return render_template('About-Me.html')
-
-
 @app.route('/PostYourConfession', methods=['GET', 'POST'])
 def Post_Confession():
     if request.method == 'POST': 
